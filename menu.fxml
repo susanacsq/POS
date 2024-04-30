@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <VBox alignment="CENTER" spacing="10" prefWidth="600.0" prefHeight="400.0">
+                    <!-- Title Label -->
+                    <Label fx:id="label_menu" text="Explore our menu!" font="Arial Rounded MT Bold, 14" />
+
+                    <!-- Food Item Cards -->
+                    <VBox alignment="CENTER" spacing="10" prefWidth="600.0">
+                        <!-- Cheeseburger Card -->
+                        <AnchorPane prefHeight="120.0" prefWidth="400.0" style="-fx-background-color: lightgrey;">
+                            <children>
+                                <ImageView fx:id="image_cheeseburger" layoutX="10.0" layoutY="10.0" fitHeight="80.0" fitWidth="80.0" preserveRatio="true" />
+                                <Label layoutX="100.0" layoutY="10.0" text="Cheeseburger" />
+                                <Label layoutX="100.0" layoutY="30.0" text="RM5.00" />
+                                <Spinner fx:id="spinner_cheeseburger" layoutX="100.0" layoutY="50.0" minWidth="55.0" maxWidth="55.0" />
+                                <Button fx:id="button_add_cheeseburger" layoutX="160.0" layoutY="50.0" text="Add"
+                                />
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Add more food cards here (similar to Cheeseburger Card) -->
+                        <!-- Example for Beef Burger Card -->
+                        <AnchorPane prefHeight="120.0" prefWidth="400.0" style="-fx-background-color: lightgrey;">
+                            <children>
+                                <ImageView fx:id="image_beef_burger" layoutX="10.0" layoutY="10.0" fitHeight="80.0" fitWidth="80.0" preserveRatio="true" />
+                                <Label layoutX="100.0" layoutY="10.0" text="Beef Burger" />
+                                <Label layoutX="100.0" layoutY="30.0" text="RM7.00" />
+                                <Spinner fx:id="spinner_beef_burger" layoutX="100.0" layoutY="50.0" minWidth="55.0" maxWidth="55.0" />
+                                <Button fx:id="button_add_beef_burger" layoutX="160.0" layoutY="50.0" text="Add"/>
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Add similar cards for other food items such as Spaghetti, Pizza, Coke, and Water -->
+
+                    </VBox>
+
+                    <!-- Cart TextArea -->
+                    <TextArea fx:id="textArea_cart" prefHeight="100.0" prefWidth="500.0" editable="false" promptText="Cart" wrapText="true" />
+
+                    <!-- Sign Out Button -->
+                    <Button fx:id="button_sign_out" text="Sign Out" underline="true" textFill="#3555f8" />
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

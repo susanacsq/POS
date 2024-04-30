@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="card_form" prefHeight="120.0" prefWidth="140.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.cardProductController">
+   <children>
+      <VBox layoutX="18.0" layoutY="-40.0" prefHeight="160.0" prefWidth="135.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="22.0" prefWidth="135.0">
+               <children>
+                  <Label fx:id="prod_name" prefHeight="17.0" prefWidth="128.0" text="Burger">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="prod_price" prefHeight="17.0" prefWidth="74.0" text="RM7.9">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="79.0" prefWidth="135.0">
+               <children>
+                  <ImageView fx:id="prod_imageView" fitHeight="79.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <HBox layoutY="105.0" prefHeight="22.0" prefWidth="135.0">
+         <children>
+            <Spinner fx:id="prod_spinner" prefHeight="25.0" prefWidth="57.0">
+               <HBox.margin>
+                  <Insets bottom="3.0" left="5.0" />
+               </HBox.margin>
+            </Spinner>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addBtn" text="Add">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
